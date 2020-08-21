@@ -5,13 +5,11 @@
  */
 
 module.exports = {
-
   siteMetadata: {
-    title: 'Title from siteMetadata',
+    title: "Pandas Eating Lots",
   },
 
   plugins: [
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,12 +17,12 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-
-    'gatsby-plugin-emotion',
+    `gatsby-transformer-remark`,
+    "gatsby-plugin-emotion",
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: 'src/utils/typography',
+        pathToConfigModule: "src/utils/typography",
       },
     },
   ],
